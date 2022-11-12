@@ -46,6 +46,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     background-color: var(--LightGray);
+    scroll-behavior: smooth;
 }
 /* Tipografia */
 

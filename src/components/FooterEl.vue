@@ -3,13 +3,13 @@
         <div class="flex-wrapper">
             <section class="router-wrapper">
                 <router-link to="/">Home</router-link>
-                <router-link to="/about">About</router-link>
+                <router-link to="/portifolio">Portifolio</router-link>
                 <router-link to="/contact">Contact</router-link>
             </section>
             <section class="icons-wrapper">
-                <a href=""><GitHub /></a>
-                <a href=""><Twitter /></a>
-                <a href=""><LinkedIn /></a>
+                <a href="#"><GitHub /></a>
+                <a href="#"><Twitter /></a>
+                <a href="#"><LinkedIn /></a>
             </section>
         </div>
     </footer>

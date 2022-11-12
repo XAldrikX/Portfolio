@@ -8,9 +8,9 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import('../views/AboutView.vue')
+    path: '/portifolio',
+    name: 'portifolio',
+    component: () => import('../views/PortfolioView.vue')
   },
   {
     path: '/contact',
@@ -21,6 +21,15 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        top: 20,
+        behavior: 'smooth',
+      }
+    }
+  },
   routes
 })
 

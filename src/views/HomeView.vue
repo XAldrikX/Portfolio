@@ -5,12 +5,12 @@
                 <img class="presentation-background" src="../assets/teste.jpg" alt="Notebook encima de uma mesa de trabalho, com plantas e um abajur"/>
                 <div class="presentation-text">
                     <h1>Hey, I'm Nicolas <br> Bortoli and I <br> love building <br> beautiful websites</h1>
-                    <router-link class="btn-about-me" to="/about">ABOUT ME</router-link>
+                    <router-link class="btn-about-me" to="#about-me">ABOUT ME</router-link>
                 </div>
             </div>
         </section>
 
-        <section class="two">
+        <section class="two" id="about-me">
             <!-- Mudar about me para portifolio -->
             <div class="about-me">
                 <img class="about-me-background" src="../assets/background-about-me.jpg" alt="Bloco de notas e um tablet">
@@ -146,14 +146,30 @@ export default {
         margin-top: auto;
         background-color: var(--DarkBlue);
         color: var(--VeryLightGray);
+        transition: background-color .2s ease-in-out;
     }
     .btn-portifolio {
         margin-top: 30px;
         border: 1px solid var(--DarkBlue);
         background-color: transparent;
         color: var(--DarkBlue);
+        transition: background-color .2s ease-in-out;
     }
     .btn-contact-me {
         border: 1px solid var(--DarkBlue);
+        transition: background-color .2s ease-in-out;
     }
+
+    .btn-about-me:hover,
+    .btn-about-me:focus {
+        background-color: var(--Cyan);
+    }
+    .btn-contact-me:hover,
+    .btn-contact-me:focus,
+    .btn-portifolio:hover,
+    .btn-portifolio:focus {
+        background-color: var(--GrayDarkBlue);
+        color: var(--VeryLightGray);
+    }
+
 </style>
