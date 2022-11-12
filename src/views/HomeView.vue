@@ -5,9 +5,7 @@
                 <img class="presentation-background" src="../assets/teste.jpg" alt="Notebook encima de uma mesa de trabalho, com plantas e um abajur"/>
                 <div class="presentation-text">
                     <h1>Hey, I'm Nicolas <br> Bortoli and I <br> love building <br> beautiful websites</h1>
-                    <button class="btn-about-me">
-                        <router-link to="/about">ABOUT ME</router-link>
-                    </button>
+                    <router-link class="btn-about-me" to="/about">ABOUT ME</router-link>
                 </div>
             </div>
         </section>
@@ -23,10 +21,16 @@
                         and have experience in remote teams. When I'm not coding, you'll find me outdoors. I love being out in nature whether that's going for a walk, run or cycling. I'd love 
                         you to check out my work.
                     </p>
-                    <button class="btn-portifolio">
-                        <router-link to="/portifolio">GO TO PORTFOLIO</router-link>
-                    </button>
+                    <router-link class="btn-portifolio" to="/portifolio">GO TO PORTFOLIO</router-link>
                 </div>
+            </div>
+        </section>
+
+        <section class="three">
+            <div class="contact-me">
+                <h3>Interested in doing <br> a project together?</h3>
+                <div class="line"></div>
+                <router-link class="btn-contact-me" to="/contact">CONTACT ME</router-link>
             </div>
         </section>
     </div>
@@ -48,14 +52,32 @@ export default {
         margin: 0 auto;
         position: relative;
     }
-    .about-me {
-        max-width: 1110px;
-        margin: 0 auto;
+    .about-me,
+    .contact-me {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        max-width: 1110px;
+        margin: 0 auto;
     }
-    .two {
+    .contact-me > h3 {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 42px;
+        letter-spacing: -0.35px;
+        color: #33323D;
+    }
+    .line {
+        width: 500px;
+        height: 1px;
+        border-bottom: 2px solid var(--LightGray);
+    }
+    .two,
+    .three {
         margin-top: 150px;
+    }
+    .three {
+        padding-bottom: 150px;
     }
     .presentation-background {
         width: 100%;
@@ -88,9 +110,13 @@ export default {
         display: flex;
         flex-direction: column;
         font-style: normal;
+        height: 600px;
         font-weight: 400;
         font-size: 16px;
         line-height: 30px;
+        border-top: 2px solid var(--LightGray);
+        border-bottom: 2px solid var(--LightGray);
+        margin-right: calc(1110px - 1015px);
     }
     .about-me-text > p {
         width: 350px;
@@ -100,37 +126,34 @@ export default {
     }
     .presentation-text > h1 {
         line-height: 50px;
-        margin-top: 50px;
+        margin-top: 55px;
         letter-spacing: -0.45px;
     }
-    .btn-about-me {
+    .btn-about-me,
+    .btn-portifolio,
+    .btn-contact-me {
         width: 200px;
         height: 48px;
-        margin-top: auto;
-        background-color: var(--DarkBlue);
-    }
-    .btn-about-me > a {
-        color: var(--VeryLightGray);
         text-decoration: none;
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
         text-align: center;
         letter-spacing: 2px;
+        padding-top: 17px;
+    }
+    .btn-about-me {
+        margin-top: auto;
+        background-color: var(--DarkBlue);
+        color: var(--VeryLightGray);
     }
     .btn-portifolio {
-        width: 200px;
-        height: 48px;
         margin-top: 30px;
         border: 1px solid var(--DarkBlue);
         background-color: transparent;
-    }
-    .btn-portifolio > a {
-        text-decoration: none;
         color: var(--DarkBlue);
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 2px;
+    }
+    .btn-contact-me {
+        border: 1px solid var(--DarkBlue);
     }
 </style>

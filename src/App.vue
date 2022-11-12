@@ -1,16 +1,18 @@
 <template>
     <NavBar />
     <router-view class="body-router-view"/>
-<!-- Footer vem aqui -->
+    <FooterEl />
 </template>
 
 <script>
     import NavBar from '../src/components/NavBar.vue';
+    import FooterEl from '../src/components/FooterEl.vue';
 
     export default {
         name: 'App',
         components: {
-            NavBar
+            NavBar,
+            FooterEl
         }
     }
 </script>
@@ -43,7 +45,7 @@ img {
 body {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: var(--GrayDarkBlue);
+    background-color: var(--LightGray);
 }
 /* Tipografia */
 
