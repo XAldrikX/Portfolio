@@ -1,30 +1,85 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <NavBar />
+    <router-view class="body-router-view"/>
+<!-- Footer vem aqui -->
 </template>
 
+<script>
+    import NavBar from '../src/components/NavBar.vue';
+
+    export default {
+        name: 'App',
+        components: {
+            NavBar
+        }
+    }
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+/* Variaveis e resets */
+
+:root {
+    --Cyan: #5FB4A2;
+    --DarkBlue: #203A4C;
+    --GrayDarkBlue: #33323D;
+    --VeryLightGray: #FAFAFA;
+    --LightGray: #EAEAEB;
+    --BrightRed: #F43030;
 }
 
-nav {
-  padding: 30px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+img {
+    max-width: 100%;
+    display: block;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--GrayDarkBlue);
 }
+/* Tipografia */
+
+h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-family: 'Ibarra Real Nova', serif;
+    color: var(--GrayDarkBlue);
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--GrayDarkBlue);
+}
+
+/* Layout */
+
+.body-router-view {
+    max-width: 1440px;
+    height: auto;
+    background-color: var(--VeryLightGray);
+}
+
 </style>
