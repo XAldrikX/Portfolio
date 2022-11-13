@@ -4,12 +4,12 @@
             <section class="router-wrapper">
                 <router-link to="/">Home</router-link>
                 <router-link to="/portifolio">Portifolio</router-link>
-                <router-link to="/contact">Contact</router-link>
+                <router-link to="/contact">Contact me</router-link>
             </section>
             <section class="icons-wrapper">
-                <a href="#"><GitHub /></a>
-                <a href="#"><Twitter /></a>
-                <a href="#"><LinkedIn /></a>
+                <a href="#"><GitHub color="#FFF" color_2="#33323D" /></a>
+                <a href="#"><Twitter color="#FFF" /></a>
+                <a href="#"><LinkedIn color="#FFF" /></a>
             </section>
         </div>
     </footer>

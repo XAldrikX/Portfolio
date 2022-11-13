@@ -81,7 +81,7 @@ body {
 
 .body-router-view {
     max-width: 1440px;
-    height: auto;
+    /* height: auto; */
     background-color: var(--VeryLightGray);
 }
 
