@@ -24,7 +24,7 @@
                         being out in nature whether that's going for a walk, run or cycling. I'd love 
                         you to check out my work.
                     </p>
-                    <router-link class="btn-portifolio" to="/portifolio">GO TO PORTFOLIO</router-link>
+                    <router-link class="btn-portifolio" to="/portfolio">GO TO PORTFOLIO</router-link>
                 </div>
             </div>
         </section>

@@ -3,7 +3,7 @@
         <div class="flex-wrapper">
             <section class="router-wrapper">
                 <router-link to="/">Home</router-link>
-                <router-link to="/portifolio">Portifolio</router-link>
+                <router-link to="/portfolio">Portfolio</router-link>
                 <router-link to="/contact">Contact me</router-link>
             </section>
             <section class="icons-wrapper">

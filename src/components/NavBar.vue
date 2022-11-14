@@ -2,7 +2,7 @@
     <header>
         <nav class="nav-wrapper">
             <router-link to="/">Home</router-link>
-            <router-link to="/portifolio">Portifolio</router-link>
+            <router-link to="/portfolio">Portfolio</router-link>
             <router-link to="/contact">Contact me</router-link>
         </nav>
     </header>
