@@ -7,9 +7,9 @@
                 <router-link to="/contact">Contact me</router-link>
             </section>
             <section class="icons-wrapper">
-                <a href="#"><GitHub color="#FFF" color_2="#33323D" /></a>
-                <a href="#"><Twitter color="#FFF" /></a>
-                <a href="#"><LinkedIn color="#FFF" /></a>
+                <a href="#"><GitHub color="#FFF" color_2="#33323D" class="github" /></a>
+                <a href="#"><Twitter color="#FFF" class="twitter" /></a>
+                <a href="#"><LinkedIn color="#FFF" class="linkedin" /></a>
             </section>
         </div>
     </footer>
@@ -62,5 +62,16 @@
     }
     footer a.router-link-exact-active {
         color: var(--Cyan);
+    }
+    .github,
+    .twitter,
+    .linkedin {
+        transition: transform .5s;
+        transform: translateY(0) scale(1);
+    }
+    .github:hover,
+    .twitter:hover,
+    .linkedin:hover {
+        transform: translateY(-7px) scale(1.2);
     }
 </style>

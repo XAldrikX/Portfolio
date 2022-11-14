@@ -11,9 +11,9 @@
                     attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.
                 </p>
                 <div class="social-media-icons">
-                    <a href="#"><GitHub color="#33323D" color_2="#FFF" /></a>
-                    <a href="#"><Twitter color="#33323D" /></a>
-                    <a href="#"><LinkedIn color="#33323D" /></a>
+                    <a href="#"><GitHub color="#33323D" color_2="#FFF" class="github" /></a>
+                    <a href="#"><Twitter color="#33323D" class="twitter" /></a>
+                    <a href="#"><LinkedIn color="#33323D" class="linkedin" /></a>
                 </div>
             </div>
         </section>
@@ -117,5 +117,16 @@
     }
     .btn-send:hover {
         background-color: var(--Cyan);
+    }
+    .github,
+    .twitter,
+    .linkedin {
+        transition: transform .5s;
+        transform: translateY(0) scale(1);
+    }
+    .github:hover,
+    .twitter:hover,
+    .linkedin:hover {
+        transform: translateY(-7px) scale(1.2);
     }
 </style>
