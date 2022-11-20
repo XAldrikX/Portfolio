@@ -1,6 +1,13 @@
 <template>
     <NavBar />
-    <router-view class="body-router-view"/>
+    <router-view v-slot="{ Component }" class="body-router-view">
+        <transition 
+        enter-active-class="animate__animated animate__fadeInLeft"
+        leave-active-class="animate__animated animate__fadeOutLeft"
+        mode="out-in">
+            <component :is="Component" />
+        </transition>
+    </router-view>
     <FooterEl />
 </template>
 
@@ -81,8 +88,17 @@ body {
 
 .body-router-view {
     max-width: 1440px;
-    /* height: auto; */
+    height: auto;
     background-color: var(--VeryLightGray);
 }
 
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5 ease-out; 
+}
 </style>

@@ -6,6 +6,9 @@
                 <div class="left-text-wrapper">
                     <h1 class="left-text">{{ project.title }}</h1>
                     <p>{{ project.description }}</p>
+                    <router-linK>
+                        <button class="btn-view-project">VIEW PROJECT</button>
+                    </router-linK>
                 </div>
             </div>
 
@@ -13,6 +16,9 @@
                 <div class="right-text-wrapper">
                     <h1 class="right-text">{{ project.title }}</h1>
                     <p>{{ project.description }}</p>
+                    <router-linK>
+                        <button class="btn-view-project">VIEW PROJECT</button>
+                    </router-linK>
                 </div>
                 <img class="right-img" :src="require(`../assets/projects/${project.img}`)" alt="website with charts, metrics and alikes">
             </div>
@@ -34,6 +40,9 @@
 </script>
 
 <style scoped>
+    main {
+        padding-bottom: 1px;
+    }
     p {
         font-weight: 400;
         font-size: 16px;
@@ -54,7 +63,12 @@
         justify-content: space-between;
         max-width: 1015px;
         height: auto;
-        margin: 0 auto 80px auto;
+    }
+    .left {
+        margin: 0 265px 80px auto;
+    }
+    .right {
+        margin: 0 auto 80px 265px;
     }
     img {
         max-width: 550px;
@@ -63,8 +77,26 @@
     .right-text-wrapper {
         max-width: 350px;
         margin: auto 0;
-        padding: 132px 0;
+        padding: 96px 0;
         border-top: 1px solid var(--LightGray);
         border-bottom: 1px solid var(--LightGray);
+    }
+    .btn-view-project {
+        width: 175px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        margin-top: 25px;
+        cursor: pointer;
+        border: 1px solid var(--GrayDarkBlue);
+        background-color: var(--VeryLightGray);
+        transition: background-color .2s ease-in-out;
+    }
+    .btn-view-project:hover,
+    .btn-view-project:focus {
+        background-color: var(--GrayDarkBlue);
+        color: var(--VeryLightGray);
     }
 </style>
