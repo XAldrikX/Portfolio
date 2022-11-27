@@ -1,13 +1,6 @@
 <template>
     <NavBar />
-    <router-view v-slot="{ Component }" class="body-router-view">
-        <transition 
-        enter-active-class="animate__animated animate__fadeInLeft"
-        leave-active-class="animate__animated animate__fadeOutLeft"
-        mode="out-in">
-            <component :is="Component" />
-        </transition>
-    </router-view>
+    <router-view class="body-router-view" />
     <FooterEl />
 </template>
 

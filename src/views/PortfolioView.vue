@@ -6,9 +6,9 @@
                 <div class="left-text-wrapper">
                     <h1 class="left-text">{{ project.title }}</h1>
                     <p>{{ project.description }}</p>
-                    <router-linK>
+                    <!-- <router-linK> -->
                         <button class="btn-view-project">VIEW PROJECT</button>
-                    </router-linK>
+                    <!-- </router-linK> -->
                 </div>
             </div>
 
@@ -16,9 +16,9 @@
                 <div class="right-text-wrapper">
                     <h1 class="right-text">{{ project.title }}</h1>
                     <p>{{ project.description }}</p>
-                    <router-linK>
+                    <!-- <router-linK> -->
                         <button class="btn-view-project">VIEW PROJECT</button>
-                    </router-linK>
+                    <!-- </router-linK> -->
                 </div>
                 <img class="right-img" :src="require(`../assets/projects/${project.img}`)" alt="website with charts, metrics and alikes">
             </div>
