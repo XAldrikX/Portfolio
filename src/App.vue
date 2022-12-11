@@ -94,4 +94,10 @@ body {
 .fade-leave-active {
     transition: opacity 0.5 ease-out; 
 }
+
+@media(max-width: 1200px) {
+    .body-router-view {
+        padding: 0 2.5rem 0 2.5rem;;
+    }
+}
 </style>

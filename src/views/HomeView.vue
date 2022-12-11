@@ -4,7 +4,7 @@
             <div class="presentation">
                 <img class="presentation-background" src="../assets/teste.jpg" alt="Notebook encima de uma mesa de trabalho, com plantas e um abajur"/>
                 <div class="presentation-text">
-                    <h1>Hey, I'm Nicolas <br v-if="windowWidth > 820"> Bortoli and I <br v-if="windowWidth > 820"> love building <br v-if="windowWidth > 768"> beautiful websites</h1>
+                    <h1>Hey, I'm Nicolas <br v-if="windowWidth > 1200"> Bortoli and I <br v-if="windowWidth > 1200"> love building <br v-if="windowWidth > 768"> beautiful websites</h1>
                     <router-link class="btn-about-me" to="#about-me">ABOUT ME</router-link>
                 </div>
             </div>
@@ -53,7 +53,6 @@ export default {
     },
     created() {
         this.windowWidth = document.documentElement.clientWidth
-        console.log(this.windowWidth)
     }
 }
 </script>
@@ -184,10 +183,10 @@ export default {
         color: var(--VeryLightGray);
     }
 
-    @media (max-width: 820px) {
-        .wrapper {
+    @media (max-width: 1200px) {
+        /* .wrapper {
             padding: 0 2.5rem 0 2.5rem;
-        }
+        } */
         .presentation-text {
             width: 80%;
         }

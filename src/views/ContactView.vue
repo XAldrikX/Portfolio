@@ -136,10 +136,10 @@
         transform: translateY(-7px) scale(1.2);
     }
 
-    @media(max-width: 820px) {
-        .contact-me-wrapper {
+    @media(max-width: 1200px) {
+        /* .contact-me-wrapper {
             padding: 0 2.5rem 0 2.5rem;
-        }
+        } */
         .one,
         .two {
             display: block;

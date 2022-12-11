@@ -48,7 +48,7 @@
         color: var(--Cyan);
     }
 
-    @media (max-width: 820px) {
+    @media (max-width: 1200px) {
         header {
             padding: 4rem 2.5rem 3.375rem 2.5rem;
         }

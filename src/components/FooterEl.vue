@@ -75,7 +75,7 @@
         transform: translateY(-7px) scale(1.2);
     }
 
-    @media (max-width: 820px) {
+    @media (max-width: 1200px) {
         footer {
             padding: 2rem 2.5rem 2rem 2.5rem;
         }

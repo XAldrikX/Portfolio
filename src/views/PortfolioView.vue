@@ -100,14 +100,14 @@
         color: var(--VeryLightGray);
     }
 
-    @media (max-width: 820px) {
+    @media (max-width: 1200px) {
         img {
             max-width: 339px;
             padding: 2.875rem 0;
         }
-        main {
+        /* main {
             padding: 0 2.5rem 0 2.5rem;
-        }
+        } */
         .left {
             margin: 0;
             padding: 2.5rem 0;
@@ -119,6 +119,12 @@
         .left-text-wrapper,
         .right-text-wrapper {
             padding: 2.875rem 0;
+        }
+        .left-img {
+            margin-right: 2.5rem;
+        }
+        .right-img {
+            margin-left: 2.5rem;
         }
     }
 </style>
