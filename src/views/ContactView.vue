@@ -60,7 +60,13 @@
         margin: 0 auto;
         padding-top: 4rem;
         padding-bottom: 2rem;
+    }
+    .one {
         border-top: 2px solid var(--LightGray);
+        border-bottom: 1px solid var(--LightGray);
+    }
+    .two {
+        border-top: 1px solid var(--LightGray);
         border-bottom: 2px solid var(--LightGray);
     }
     .contact-me-text-wrapper {
@@ -128,5 +134,20 @@
     .twitter:hover,
     .linkedin:hover {
         transform: translateY(-7px) scale(1.2);
+    }
+
+    @media(max-width: 820px) {
+        .contact-me-wrapper {
+            padding: 0 2.5rem 0 2.5rem;
+        }
+        .one,
+        .two {
+            display: block;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+        h2 {
+            padding-bottom: 1.5rem;
+        }
     }
 </style>

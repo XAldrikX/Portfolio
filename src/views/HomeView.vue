@@ -4,7 +4,7 @@
             <div class="presentation">
                 <img class="presentation-background" src="../assets/teste.jpg" alt="Notebook encima de uma mesa de trabalho, com plantas e um abajur"/>
                 <div class="presentation-text">
-                    <h1>Hey, I'm Nicolas <br> Bortoli and I <br> love building <br> beautiful websites</h1>
+                    <h1>Hey, I'm Nicolas <br v-if="windowWidth > 820"> Bortoli and I <br v-if="windowWidth > 820"> love building <br v-if="windowWidth > 768"> beautiful websites</h1>
                     <router-link class="btn-about-me" to="#about-me">ABOUT ME</router-link>
                 </div>
             </div>
@@ -45,6 +45,15 @@ export default {
     name: 'HomeView',
     components: {
         
+    },
+    data() {
+        return {
+            windowWidth: null
+        }
+    },
+    created() {
+        this.windowWidth = document.documentElement.clientWidth
+        console.log(this.windowWidth)
     }
 }
 </script>
@@ -103,7 +112,7 @@ export default {
         height: 60%;
         background-color: var(--VeryLightGray);
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         -webkit-border-top-right-radius: 10px;
         -moz-border-radius-topright: 10px;
@@ -175,4 +184,22 @@ export default {
         color: var(--VeryLightGray);
     }
 
+    @media (max-width: 820px) {
+        .wrapper {
+            padding: 0 2.5rem 0 2.5rem;
+        }
+        .presentation-text {
+            width: 80%;
+        }
+        .about-me-background {
+            width: 40%;
+            height: 600px;
+        }
+        .about-me-text {
+            margin-right: 0;
+        }
+        .line {
+            width: 115px;
+        }
+    }
 </style>

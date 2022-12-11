@@ -77,7 +77,7 @@
     .right-text-wrapper {
         max-width: 350px;
         margin: auto 0;
-        padding: 96px 0;
+        padding: 6rem 0;
         border-top: 1px solid var(--LightGray);
         border-bottom: 1px solid var(--LightGray);
     }
@@ -98,5 +98,27 @@
     .btn-view-project:focus {
         background-color: var(--GrayDarkBlue);
         color: var(--VeryLightGray);
+    }
+
+    @media (max-width: 820px) {
+        img {
+            max-width: 339px;
+            padding: 2.875rem 0;
+        }
+        main {
+            padding: 0 2.5rem 0 2.5rem;
+        }
+        .left {
+            margin: 0;
+            padding: 2.5rem 0;
+        }
+        .right {
+            margin: 0;
+            padding: 2.5rem 0;
+        }
+        .left-text-wrapper,
+        .right-text-wrapper {
+            padding: 2.875rem 0;
+        }
     }
 </style>

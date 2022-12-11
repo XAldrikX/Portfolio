@@ -47,4 +47,10 @@
     nav a.router-link-exact-active {
         color: var(--Cyan);
     }
+
+    @media (max-width: 820px) {
+        header {
+            padding: 4rem 2.5rem 3.375rem 2.5rem;
+        }
+    }
 </style>
