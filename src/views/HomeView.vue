@@ -4,7 +4,7 @@
             <div class="presentation">
                 <img class="presentation-background" src="../assets/teste.jpg" alt="Notebook encima de uma mesa de trabalho, com plantas e um abajur"/>
                 <div class="presentation-text">
-                    <h1>Hey, I'm Nicolas <br v-if="windowWidth > 1200"> Bortoli and I <br v-if="windowWidth > 1200"> love building <br v-if="windowWidth > 768"> beautiful websites</h1>
+                    <h1>Hey, I'm Alex <br v-if="windowWidth > 1200"> Spencer and I <br v-if="windowWidth > 1200"> love building <br v-if="windowWidth > 768"> beautiful websites</h1>
                     <router-link class="btn-about-me" to="#about-me">ABOUT ME</router-link>
                 </div>
             </div>
@@ -16,7 +16,8 @@
                 <img class="about-me-background" src="../assets/background-about-me.jpg" alt="Bloco de notas e um tablet">
                 <div class="about-me-text">
                     <h2>About me</h2>
-                    <p>I'm a junior front-end developer looking for a new role in an exciting company. I focus on writing 
+                    <p>
+                        I'm a junior front-end developer looking for a new role in an exciting company. I focus on writing 
                         accessible HTML, using modern CSS practices and writing clean 
                         JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to 
                         whatever tools are required. I'm based in London, UK, but I'm happy working remotely 
@@ -137,7 +138,7 @@ export default {
     }
     .presentation-text > h1 {
         line-height: 50px;
-        margin-top: 55px;
+        margin-top: 3.438rem;
         letter-spacing: -0.45px;
     }
     .btn-about-me,
@@ -183,10 +184,7 @@ export default {
         color: var(--VeryLightGray);
     }
 
-    @media (max-width: 1200px) {
-        /* .wrapper {
-            padding: 0 2.5rem 0 2.5rem;
-        } */
+    @media(max-width: 1200px) {
         .presentation-text {
             width: 80%;
         }
@@ -199,6 +197,48 @@ export default {
         }
         .line {
             width: 115px;
+        }
+    }
+    @media(max-width: 700px) {
+        .presentation-text {
+            position: unset;
+            width: 100%;
+        }
+        .presentation-text > h1 {
+            margin: 2rem 0 2rem 0;
+        }
+        .about-me {
+            display: block;
+        }
+        .about-me-background {
+            width: 100%;
+            height: auto;
+            padding-bottom: 2.188rem;
+        }
+        .two,
+        .three {
+            margin-top: 3.75rem;
+        }
+        .about-me-text {
+            height: auto;
+            margin-right: 0;
+            padding-bottom: 2.188rem;
+        }
+        .about-me-text > p {
+            width: 100%;
+        }
+        .about-me-text > h2 {
+            margin: 25px 0;
+        }
+        .line {
+            display: none;
+        }
+        .contact-me {
+            flex-direction: column;
+        }
+        .contact-me > h3 {
+            margin-bottom: 2rem;
+            text-align: center;
         }
     }
 </style>

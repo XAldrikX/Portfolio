@@ -100,4 +100,12 @@ body {
         padding: 0 2.5rem 0 2.5rem;;
     }
 }
+@media(max-width: 800px) {
+    .body-router-view {
+        padding: 0 1.5rem 0 1.5rem;;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}
 </style>

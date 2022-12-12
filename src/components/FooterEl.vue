@@ -2,9 +2,9 @@
     <footer>
         <div class="flex-wrapper">
             <section class="router-wrapper">
-                <router-link to="/">Home</router-link>
-                <router-link to="/portfolio">Portfolio</router-link>
-                <router-link to="/contact">Contact me</router-link>
+                <router-link class="links" to="/">Home</router-link>
+                <router-link class="links" to="/portfolio">Portfolio</router-link>
+                <router-link class="links" to="/contact">Contact me</router-link>
             </section>
             <section class="icons-wrapper">
                 <a href="#"><GitHub color="#FFF" color_2="#33323D" class="github" /></a>
@@ -75,9 +75,35 @@
         transform: translateY(-7px) scale(1.2);
     }
 
-    @media (max-width: 1200px) {
+    @media(max-width: 1200px) {
         footer {
             padding: 2rem 2.5rem 2rem 2.5rem;
+        }
+    }
+    @media(max-width: 700px) {
+        .flex-wrapper {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 310px;
+        }
+        .router-wrapper {
+            flex-direction: column;
+        }
+        .links {
+            margin-bottom: 2rem;
+        }
+        .icons-wrapper {
+            display: inline-block;
+        }
+        footer a {
+            margin-right: 0px;
+        }
+        .icons-wrapper a {
+            margin-right: 25px;
+        }
+        .icons-wrapper a:last-child {
+            margin-right: 0;
         }
     }
 </style>

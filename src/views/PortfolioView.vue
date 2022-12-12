@@ -105,9 +105,6 @@
             max-width: 339px;
             padding: 2.875rem 0;
         }
-        /* main {
-            padding: 0 2.5rem 0 2.5rem;
-        } */
         .left {
             margin: 0;
             padding: 2.5rem 0;
@@ -126,5 +123,8 @@
         .right-img {
             margin-left: 2.5rem;
         }
+    }
+    @media(max-width: 700px) {
+        
     }
 </style>
