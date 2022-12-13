@@ -125,6 +125,31 @@
         }
     }
     @media(max-width: 700px) {
-        
+        img {
+            width: 100%;
+        }
+        .left,
+        .right {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        .left-img {
+            margin: 0 auto;
+        }
+        .right-img {
+            display: flex;
+            margin: 0 auto;
+            order: 1;
+        }
+        .right-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            order: 2;
+        }
+        .left-text-wrapper,
+        .right-text-wrapper {
+            margin: 0 auto;
+        }
     }
 </style>
