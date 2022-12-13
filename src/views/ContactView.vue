@@ -147,4 +147,16 @@
             padding-bottom: 1.5rem;
         }
     }
+    @media(max-width: 700px) {
+        .form-send-contact {
+            max-width: 650px;
+            width: 100%;
+        }
+    }
+    @media(max-width: 400px) {
+        .form-send-contact {
+            max-width: 350px;
+            width: 100%;
+        }
+    }
 </style>
