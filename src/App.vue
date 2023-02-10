@@ -1,6 +1,10 @@
 <template>
     <NavBar />
-    <router-view class="body-router-view" />
+    <router-view v-slot="{ Component }" class="body-router-view">
+        <transition name="fade" mode="out-in">
+            <component :is="Component" />
+        </transition>
+    </router-view>
     <FooterEl />
 </template>
 
@@ -107,5 +111,17 @@ body {
     h1 {
         font-size: 2.5rem;
     }
+}
+
+/* Transitions */
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 1 ease-in-out;
 }
 </style>
