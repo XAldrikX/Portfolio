@@ -1,17 +1,17 @@
 <template>
     <NavBar />
-    <router-view v-slot="{ Component }" class="body-router-view">
-        <transition name="fade" mode="out-in">
-            <component :is="Component" />
-        </transition>
-    </router-view>
+        <router-view class="body-router-view" v-slot="{ Component }">
+            <transition name="fade" mode="out-in">
+                <component :is="Component" />
+            </transition>
+        </router-view>
     <FooterEl />
 </template>
 
 <script>
     import NavBar from '../src/components/NavBar.vue';
     import FooterEl from '../src/components/FooterEl.vue';
-
+    
     export default {
         name: 'App',
         components: {
@@ -115,13 +115,14 @@ body {
 
 /* Transitions */
 
-.fade-enter-from,
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .8s;
+}
+
+.fade-enter,
 .fade-leave-to {
     opacity: 0;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity 1 ease-in-out;
-}
 </style>

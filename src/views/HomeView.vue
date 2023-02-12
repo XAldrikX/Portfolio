@@ -153,6 +153,7 @@ export default {
         text-align: center;
         letter-spacing: 2px;
         padding-top: 17px;
+        color: black;
     }
     .btn-about-me {
         margin-top: auto;
