@@ -104,6 +104,7 @@
         background-color: var(--LightGray);
         border: none;
         padding: 10px;
+        resize: none;
     }
     .btn-send {
         max-width: 200px;

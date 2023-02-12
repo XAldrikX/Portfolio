@@ -103,6 +103,9 @@ body {
     .body-router-view {
         padding: 0 2.5rem 0 2.5rem;;
     }
+    body {
+        background-color: var(--VeryLightGray);
+    }
 }
 @media(max-width: 800px) {
     .body-router-view {
