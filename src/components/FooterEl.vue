@@ -49,7 +49,7 @@
         height: 2rem;
     }
     footer a {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         font-weight: 400;
         line-height: 14px;
         letter-spacing: 2px;
