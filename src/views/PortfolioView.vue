@@ -2,7 +2,7 @@
     <main>
         <section v-for="project in data.projects" :key="project.id" class="project">
             <div class="left" v-if="project.position === 'left'">
-                <img class="left-img" :src='require(`../assets/projects/${project.img}`)' alt="website with charts, metrics and alikes">
+                <img class="left-img" :src='require(`@/assets/projects/${project.img}`)' alt="website with charts, metrics and alikes">
                 <div class="left-text-wrapper">
                     <h1 class="left-text">{{ project.title }}</h1>
                     <p>{{ project.description }}</p>
@@ -20,7 +20,7 @@
                         <button class="btn-view-project">VIEW PROJECT</button>
                     <!-- </router-linK> -->
                 </div>
-                <img class="right-img" :src="require(`../assets/projects/${project.img}`)" alt="website with charts, metrics and alikes">
+                <img class="right-img" :src="require(`@/assets/projects/${project.img}`)" alt="website with charts, metrics and alikes">
             </div>
         </section>
     </main>
