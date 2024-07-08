@@ -27,7 +27,7 @@
 </template>
 
 <script>
-    import projects from '../../src/projects.json';
+    import projects from '@/src/projects.json';
 
     export default {
         name: "PortfolioView",
