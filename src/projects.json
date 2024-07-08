@@ -2,7 +2,7 @@
     "projects" : {
         "project_1" : {
             "id" : 1,
-            "img" : "project_1.png",
+            "img" : "Project_1.png",
             "title" : "Manage",
             "description" : "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
             "position" : "left"
