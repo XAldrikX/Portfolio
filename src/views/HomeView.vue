@@ -4,7 +4,7 @@
             <div class="presentation">
                 <img class="presentation-background" src="../assets/teste.jpg" alt="Notebook encima de uma mesa de trabalho, com plantas e um abajur"/>
                 <div class="presentation-text">
-                    <h1>Hey, I'm Alex <br v-if="windowWidth > 1200"> Spencer and I <br v-if="windowWidth > 1200"> love building <br v-if="windowWidth > 768"> beautiful websites</h1>
+                    <h1>Hey, I'm Nicolas <br v-if="windowWidth > 1200"> Bortoli and I <br v-if="windowWidth > 1200"> love building <br v-if="windowWidth > 768"> beautiful websites</h1>
                     <router-link class="btn-about-me" to="#about-me">ABOUT ME</router-link>
                 </div>
             </div>
@@ -19,9 +19,8 @@
                     <p>
                         I'm a junior front-end developer looking for a new role in an exciting company. I focus on writing 
                         accessible HTML, using modern CSS practices and writing clean 
-                        JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to 
-                        whatever tools are required. I'm based in London, UK, but I'm happy working remotely 
-                        and have experience in remote teams. When I'm not coding, you'll find me outdoors. I love 
+                        JavaScript. When writing JavaScript code, I mostly use Vue, but I can adapt to 
+                        whatever tools are required. I'm based in Brazil, but I'm happy working remotely. When I'm not coding, you'll find me outdoors. I love 
                         being out in nature whether that's going for a walk, run or cycling. I'd love 
                         you to check out my work.
                     </p>
